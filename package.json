@@ -15,7 +15,7 @@
   "scripts": {
     "lint": "eslint src/**/*.ts",
     "lint:fix": "eslint --fix src/**/*.ts",
-    "vite": "vite",
+    "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "predeploy" : "npm run build",
