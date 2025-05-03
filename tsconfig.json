@@ -1,23 +1,41 @@
 {
-	"compilerOptions": {
-        "jsx": "react",
-		"allowJs": true,
-		// "emitDecoratorMetadata": true, // Uncomment if you use emath.js
-        // "experimentalDecorators": true, // Uncomment if you use emath.js
-		"target": "ES5",
-		"module": "NodeNext",
-		"strict": true,
-		"lib": ["ESNext", "dom"],
-		"esModuleInterop": true,
-		"skipLibCheck": true,
-		"forceConsistentCasingInFileNames": true,
-		"moduleResolution": "NodeNext",
-		"baseUrl": "./src",  // Adjust this based on your project structure
-		"outDir": "./dist",  // Adjust this based on your project structure
-		"sourceMap": true
-	},
-	"include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.js", "src/**/*.jsx"],
-	"exclude": [
-	  	"node_modules/"
-	]
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "next-env.d.ts",
+    "build/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

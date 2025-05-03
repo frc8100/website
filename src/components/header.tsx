@@ -57,7 +57,7 @@ const Logo: React.FC<LogoProps> = (props) => {
 
     return (
         <div className="flex items-center">
-            <img src={logoUrl} alt="Team Logo" className="mr-2 h-12 w-12 rounded-lg shadow-md" />
+            <img src={logoUrl} alt="Logo" className="mr-2 h-12 w-12 rounded-lg shadow-md" />
             <div>
                 <h1 className="text-xl font-bold text-accent">{teamName}</h1>
                 <p className="text-sm text-primary">{teamNumber}</p>
@@ -73,11 +73,7 @@ export const Header: React.FC = () => {
     // TODO: Add logo image
     return (
         <div className="fixed top-0 z-10 flex w-full items-center justify-between bg-secondary p-4 shadow-md">
-            <Logo
-                logoUrl="https://www.iconsdb.com/icons/preview/white/circle-xxl.png"
-                teamName="Grayson Robotics"
-                teamNumber={8100}
-            />
+            <Logo logoUrl="/logo.webp" teamName="Grayson Robotics" teamNumber={8100} />
 
             <div className="flex items-center">
                 <NavItem text="Home" url="/" />
