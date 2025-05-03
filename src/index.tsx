@@ -3,6 +3,7 @@
  */
 import React from "react";
 import { createRoot } from "react-dom/client";
+import { Header } from "./components/header";
 
 /**
  * @returns The root component of the application.
@@ -10,7 +11,7 @@ import { createRoot } from "react-dom/client";
 const App: React.FC = () => {
     return (
         <>
-            <p>Hello World!</p>
+            <Header />
         </>
     );
 };
