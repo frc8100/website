@@ -24,7 +24,7 @@ const NavItem: React.FC<NavItemProps> = (props) => {
 
     return (
         <div className="mr-6">
-            <a href={url} className="text-primary hover:text-accent">
+            <a href={url} className="text-primary hover:text-accent transition-all duration-300">
                 {text}
             </a>
         </div>
@@ -85,6 +85,7 @@ export const Header: React.FC = () => {
                 <NavItem text="Our Team" url="/ourteam" />
                 <NavItem text="News" url="/news" />
                 <NavItem text="Resources" url="/resources" />
+                <NavItem text="Donate" url="/donate" />
             </div>
         </div>
     );

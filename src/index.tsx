@@ -4,6 +4,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import { Header } from "./components/header";
+import { Hero } from "./components/hero";
 
 /**
  * @returns The root component of the application.
@@ -12,6 +13,7 @@ const App: React.FC = () => {
     return (
         <>
             <Header />
+            <Hero />
         </>
     );
 };
