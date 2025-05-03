@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 
-import { Header } from "../components/header";
-import { Hero } from "../components/hero";
-import { Footer } from "../components/footer";
+import { Header } from "@/components/header";
+import { Hero } from "@/components/hero";
+import { Footer } from "@/components/footer";
 
 /**
  * @returns The root component of the application.
