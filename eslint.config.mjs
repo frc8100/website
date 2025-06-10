@@ -77,6 +77,7 @@ export default tseslint.config(
             ],
 
             "jsdoc/require-file-overview": 1,
+            "jsdoc/require-param": 0,
         },
     },
 );
