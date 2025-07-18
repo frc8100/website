@@ -1,5 +1,8 @@
+/**
+ * @file Declares the Next.js root component for the application.
+ */
 import React from "react";
-import Image from "next/image";
+// import Image from "next/image";
 
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";

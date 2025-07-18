@@ -24,7 +24,7 @@ const NavItem: React.FC<NavItemProps> = (props) => {
 
     return (
         <div className="mr-6">
-            <a href={url} className="text-primary transition-all duration-300 hover:text-accent">
+            <a href={url} className="text-primary hover:text-accent transition-all duration-300">
                 {text}
             </a>
         </div>
@@ -59,8 +59,8 @@ const Logo: React.FC<LogoProps> = (props) => {
         <div className="flex items-center">
             <img src={logoUrl} alt="Logo" className="mr-2 h-12 w-12 rounded-lg shadow-md" />
             <div>
-                <h1 className="text-xl font-bold text-accent">{teamName}</h1>
-                <p className="text-sm text-primary">{teamNumber}</p>
+                <h1 className="text-accent text-xl font-bold">{teamName}</h1>
+                <p className="text-primary text-sm">FRC Team {teamNumber}</p>
             </div>
         </div>
     );
@@ -70,9 +70,8 @@ const Logo: React.FC<LogoProps> = (props) => {
  * @returns The header component of the application.
  */
 export const Header: React.FC = () => {
-    // TODO: Add logo image
     return (
-        <div className="fixed top-0 z-10 flex w-full items-center justify-between bg-secondary p-4 shadow-md">
+        <div className="bg-secondary fixed top-0 z-10 flex w-full items-center justify-between p-4 shadow-md">
             <Logo logoUrl="/logo.webp" teamName="Grayson Robotics" teamNumber={8100} />
 
             <div className="flex items-center">

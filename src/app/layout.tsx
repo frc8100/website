@@ -1,3 +1,6 @@
+/**
+ * @file Defines the Next.js root layout for the application.
+ */
 import type { Metadata } from "next";
 // import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -17,14 +20,17 @@ export const metadata: Metadata = {
     description: "Grayson Robotics Team 8100 website",
 };
 
-export default function RootLayout({
-    children,
-}: Readonly<{
+/**
+ * @returns The root layout component of the application.
+ */
+const RootLayout: React.FC<{
     children: React.ReactNode;
-}>) {
+}> = (props) => {
     return (
         <html lang="en">
-            <body>{children}</body>
+            <body>{props.children}</body>
         </html>
     );
-}
+};
+
+export default RootLayout;
