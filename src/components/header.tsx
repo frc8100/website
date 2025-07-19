@@ -13,21 +13,24 @@ interface NavItemProps {
      * The URL to navigate to when the item is clicked.
      */
     url: string;
+
+    /**
+     * Whether the navigation item is active.
+     */
+    active?: boolean;
 }
 
 /**
  * @returns An individual navigation item.
  * @param props -
  */
-const NavItem: React.FC<NavItemProps> = (props) => {
-    const { text, url } = props;
+export const NavItem: React.FC<NavItemProps> = (props) => {
+    const { text, url, active } = props;
 
     return (
-        <div className="mr-6">
-            <a href={url} className="text-primary hover:text-accent transition-all duration-300">
-                {text}
-            </a>
-        </div>
+        <a href={url} className="text-secondary hover:text-accent mr-6 transition-all duration-300">
+            {text}
+        </a>
     );
 };
 
@@ -57,10 +60,10 @@ const Logo: React.FC<LogoProps> = (props) => {
 
     return (
         <div className="flex items-center">
-            <img src={logoUrl} alt="Logo" className="mr-2 h-12 w-12 rounded-lg shadow-md" />
+            <img src={logoUrl} alt="Logo" className="mr-2 h-12 w-12 rounded-lg" />
             <div>
-                <h1 className="text-accent text-xl font-bold">{teamName}</h1>
-                <p className="text-primary text-sm">FRC Team {teamNumber}</p>
+                <h1 className="text-accent text-xl font-bold text-shadow-md">{teamName}</h1>
+                <p className="text-secondary text-sm text-shadow-md">FRC Team {teamNumber}</p>
             </div>
         </div>
     );
@@ -71,16 +74,17 @@ const Logo: React.FC<LogoProps> = (props) => {
  */
 export const Header: React.FC = () => {
     return (
-        <div className="bg-secondary fixed top-0 z-10 flex w-full items-center justify-between p-4 shadow-md">
+        <div className="bg-primary fixed top-0 z-10 flex w-full items-center justify-between p-4 shadow-md">
             <Logo logoUrl="/logo.webp" teamName="Grayson Robotics" teamNumber={8100} />
 
+            {/* TODO: Add these links */}
             <div className="flex items-center">
                 <NavItem text="Home" url="/" />
-                <NavItem text="Portfolio" url="/portfolio" />
-                <NavItem text="Our Team" url="/ourteam" />
-                <NavItem text="News" url="/news" />
-                <NavItem text="Resources" url="/resources" />
-                <NavItem text="Donate" url="/donate" />
+                <NavItem text="History" url="/" />
+                <NavItem text="Our Team" url="/" />
+                <NavItem text="Sponsors" url="/" />
+                <NavItem text="Impact" url="/" />
+                <NavItem text="Media" url="/" />
             </div>
         </div>
     );
