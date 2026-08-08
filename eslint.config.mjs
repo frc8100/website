@@ -1,20 +1,8 @@
-// @ts-check
-
-/**
- * @file ESLint configuration file
- */
-import eslint from "@eslint/js";
+import next from "eslint-config-next";
 import tseslint from "typescript-eslint";
 import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
 import jsdoc from "eslint-plugin-jsdoc";
 import react from "eslint-plugin-react";
-// import next from "eslint-config-next";
-import { FlatCompat } from "@eslint/eslintrc";
-
-const compat = new FlatCompat({
-    // import.meta.dirname is available after Node.js v20.11.0
-    baseDirectory: import.meta.dirname,
-});
 
 export default tseslint.config(
     eslint.configs.recommended,

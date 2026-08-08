@@ -17,7 +17,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "browserslist": {
     "production": [
@@ -35,31 +35,27 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.507.0",
-    "next": "^15.3.1",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "next": "16.3.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
     "tailwind-merge": "^3.2.0",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.1",
-    "@eslint/js": "^9.11.0",
     "@tailwindcss/postcss": "^4.1.5",
-    "@types/eslint__js": "^8.42.3",
     "@types/node": "^22.15.3",
-    "@types/react": "^18.3.11",
-    "@types/react-dom": "^18.2.18",
-    "eslint": "^9.11.0",
-    "eslint-config-next": "^15.3.1",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-jsdoc": "^50.2.2",
-    "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-react": "^7.36.1",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.4",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.3.0",
+    "oxfmt": "^0.62.0",
+    "oxlint": "^1.77.0",
     "postcss": "^8.4.47",
-    "prettier": "^3.3.3",
-    "prettier-plugin-tailwindcss": "^0.6.11",
     "tailwindcss": "^4.1.5",
-    "typescript": "^5.6.2",
-    "typescript-eslint": "^8.7.0"
+    "typescript": "^5.6.2"
+  },
+  "overrides": {
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.4"
   }
 }
