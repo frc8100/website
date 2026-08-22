@@ -14,7 +14,8 @@ export const Footer: React.FC = () => {
                 <p className="text-accent text-sm font-bold">Grayson Robotics</p>
             </div>
             <div className="flex items-center">
-                <NavItem text="GitHub" url="https://github.com/frc8100/website" />
+                <NavItem text="The Blue Alliance" url="https://www.thebluealliance.com/team/8100" openInNewTab={true} />
+                <NavItem text="GitHub" url="https://github.com/frc8100" openInNewTab={true} />
             </div>
         </div>
     );

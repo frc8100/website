@@ -18,6 +18,8 @@ interface NavItemProps {
      * Whether the navigation item is active.
      */
     active?: boolean;
+
+    openInNewTab?: boolean;
 }
 
 /**
@@ -27,9 +29,11 @@ interface NavItemProps {
 export const NavItem: React.FC<NavItemProps> = (props) => {
     const { text, url, active } = props;
 
+    const { openInNewTab } = props;
+
     return (
-        <a href={url} className="text-secondary hover:text-accent mr-6 transition-all duration-300">
-            {text}
+        <a href={url} target={openInNewTab ? "_blank" : undefined} rel="noopener noreferrer" className="text-secondary hover:text-accent mr-6 transition-all duration-300">
+            {text} {openInNewTab && "↗"}
         </a>
     );
 };
