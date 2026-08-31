@@ -3,19 +3,113 @@ title: Home
 description: Grayson Robotics Team 8100
 ---
 
-import { Hero } from "@/components/home/Hero";
-
 <Hero />
 
-{/* # Grayson Robotics
+<Section
+    eyebrow="FIRST Robotics Competition"
+    title="More Than Robots"
+    image="/images/frc.jpg"
+    imageAlt="FRC teams competing at a robotics competition"
+    imageSide="right"
+    variant="light"
+>
 
-placeholder hero section */}
+FIRST Robotics Competition, or FRC, is a global high school robotics competition where teams have only a few weeks to design, build, program, and test a robot for a completely new game every year.
 
-# About Our Team
+For us, the robot is only part of it. We spend our time learning from mistakes, debating design ideas, helping each other figure things out, and celebrating when something finally works. The skills we gain through that process stick with us long after the competition is over.
 
-{/* Idea make "design", "build", and "program" link to subteams or have more stylized text */}
-We are a student-led FIRST Robotics Competition team from Grayson High School in Loganville, Georgia. Every season, we work together to design, build, and program robots for competitions while developing our skills in engineering, programming, and teamwork. Our team is dedicated to developing STEM skills and inspiring the next generation of innovators.
+</Section>
 
-# About FRC
+<Section
+    eyebrow="Team 8100"
+    title="Who We Are"
+    image="/images/team/team-photo.jpg"
+    imageAlt="Members of Grayson Robotics Team 8100"
+    imageSide="left"
+    variant="dark"
+>
 
-The FIRST Robotics Competition (FRC) is an international high school robotics competition that challenges teams to design, build, and program robots to compete in a game that changes every year. But our robotics is about more than the robot. We develop leadership and teamwork skills that stay with us long after the competition ends.
+We are Grayson Robotics Team 8100, a student-led FRC team from Grayson High School in Loganville, Georgia.
+
+Our team brings together students with all kinds of interests and experience. Some of us spend most of our time writing code, some are designing and building mechanisms, and others work on things like outreach, fundraising, media, and business. What brings us together is that we get to build something real and figure out how to make it better.
+
+Every season is different, and we are always learning something new along the way.
+
+{/* Stats display */}
+<div className="grid grid-cols-3 gap-6 pt-6">
+
+<div>
+    <p className="text-3xl font-bold">8100</p>
+    <p className="text-sm opacity-70">Team Number</p>
+</div>
+
+<div>
+    <p className="text-3xl font-bold">2020</p>
+    <p className="text-sm opacity-70">Founded</p>
+</div>
+
+<div>
+    <p className="text-3xl font-bold">30+</p>
+    <p className="text-sm opacity-70">Team Members</p>
+</div>
+
+</div>
+
+</Section>
+
+<Section
+    eyebrow="2026 Season • REBUILT"
+    title="Meet Wooden Warrior"
+    image="/images/robot/wooden-warrior.jpg"
+    imageAlt="Wooden Warrior, Team 8100's 2026 robot"
+    imageSide="right"
+    variant="light"
+>
+
+For the 2026 season, our robot is **Wooden Warrior**.
+
+This year's FRC game, **REBUILT**, challenges alliances to collect and score Fuel while navigating the field.
+Our robot is built around collecting Fuel and shooting it into the Hub, with the rest of the season spent making those systems faster, more consistent, and easier to control.
+
+Wooden Warrior is the result of weeks of designing, building, testing, breaking things, and trying again. Every part of the robot has a story behind it and we're excited to keep improving it throughout the season.
+{/* 
+<div className="pt-4">
+  <a
+    href="/robot/2026"
+    className="inline-flex rounded-lg bg-zinc-900 px-5 py-3 font-semibold text-white transition hover:bg-zinc-700"
+  >
+    Explore Wooden Warrior →
+  </a>
+</div> */}
+
+</Section>
+
+<Sponsors />
+
+<section className="w-full bg-blue-600 px-6 py-20 text-white md:px-12 lg:py-24">
+    <div className="mx-auto max-w-4xl text-center">
+
+        <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-blue-100">
+            Get Involved
+        </p>
+
+        <h2 className="text-4xl font-bold tracking-tight md:text-5xl">
+            Want to be part of what we're building?
+        </h2>
+
+        <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-blue-50">
+            Whether you're a student interested in robotics, a potential sponsor or mentor,
+            or just want to learn more about what we do, we'd love to hear from you!
+        </p>
+
+        <div className="mt-8">
+        <a
+            href="mailto:graysonfrc@gmail.com"
+            className="inline-flex rounded-lg bg-white px-6 py-3 font-semibold text-blue-600 transition hover:bg-blue-50"
+        >
+            Get in Touch
+        </a>
+        </div>
+
+    </div>
+</section>

@@ -12,10 +12,10 @@ const pages = {
         file: "home.mdx",
         layout: { showHeader: true, showFooter: true, variant: "wide" as const },
     },
-    history: {
-        file: "history.mdx",
-        layout: { showHeader: true, showFooter: true, variant: "default" as const },
-    },
+    // history: {
+    //     file: "history.mdx",
+    //     layout: { showHeader: true, showFooter: true, variant: "default" as const },
+    // },
 } as const;
 
 type PageSlug = keyof typeof pages;
