@@ -79,7 +79,7 @@ const Logo: React.FC<LogoProps> = (props) => {
 export const Header: React.FC = () => {
     return (
         <div className="bg-primary fixed top-0 z-10 flex w-full items-center justify-between p-4 shadow-md">
-            <Logo logoUrl="/logo.webp" teamName="Grayson Robotics" teamNumber={8100} />
+            <Logo logoUrl="/logo.png" teamName="Grayson Robotics" teamNumber={8100} />
 
             {/* TODO: Add these links */}
             <div className="flex items-center">

@@ -20,7 +20,7 @@ export function ContentLayout({
         <>
             {showHeader && <Header />}
             <main className={showHeader ? "pt-24" : "pt-8"}>
-                <article className={variant === "wide" ? "mx-auto max-w-6xl px-6" : "mx-auto max-w-3xl px-6"}>
+                <article className={variant === "wide" ? "mx-auto max-w-6xl px-6" : "mx-auto max-w-4xl px-6"}>
                     {children}
                 </article>
             </main>

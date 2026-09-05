@@ -14,16 +14,16 @@ interface SectionProps {
 
 const variants = {
     light: {
-        section: "bg-white text-zinc-900",
-        eyebrow: "text-blue-600",
+        section: "bg-background text-foreground",
+        eyebrow: "text-secondary",
     },
     dark: {
-        section: "bg-zinc-950 text-white",
-        eyebrow: "text-blue-400",
+        section: "bg-foreground text-background",
+        eyebrow: "text-accent",
     },
     accent: {
-        section: "bg-blue-600 text-white",
-        eyebrow: "text-blue-100",
+        section: "bg-accent text-accent-foreground",
+        eyebrow: "text-secondary",
     },
 };
 
