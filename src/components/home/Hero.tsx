@@ -2,6 +2,7 @@
  * @file Declares the Hero component and related components.
  */
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 interface HeroProps {
@@ -34,32 +35,32 @@ export const Hero: React.FC<HeroProps> = (props) => {
                     <h1 className="text-accent max-w-2xl text-5xl leading-[0.95] font-black tracking-tight sm:text-7xl lg:text-8xl">
                         {title}
                     </h1>
-                    <p className="text-background/85 mt-7 max-w-xl text-lg leading-8 md:text-xl">
+                    <p className="text-secondary/85 mt-7 max-w-xl text-lg leading-8 md:text-xl">
                         {subtitle}
                     </p>
 
                     <div className="mt-9 flex flex-wrap items-center gap-4">
-                        <a
-                            href="/history"
-                            className="bg-accent text-accent-foreground hover:bg-secondary inline-flex items-center rounded-md px-6 py-3 font-bold transition-colors"
+                        {/* <Link
+                            href="#about"
+                            className="bg-accent text-secondary-foreground hover:bg-secondary inline-flex items-center rounded-md px-6 py-3 font-bold transition-colors"
                         >
                             Explore our story <span className="ml-3" aria-hidden="true">→</span>
-                        </a>
-                        <a
-                            href="mailto:graysonfrc@gmail.com"
-                            className="border-background/50 text-background hover:border-accent hover:text-accent inline-flex items-center rounded-md border px-6 py-3 font-bold transition-colors"
+                        </Link> */}
+                        <Link
+                            href="#contact"
+                            className="border-accent/50 text-accent hover:border-secondary hover:text-secondary inline-flex items-center rounded-md border px-6 py-3 font-bold transition-colors"
                         >
                             Get involved
-                        </a>
+                        </Link>
                     </div>
                 </div>
 
-                <div className="border-background/30 mt-20 flex max-w-xl items-center gap-4 border-t pt-5 text-sm">
+                {/* <div className="border-background/30 mt-20 flex max-w-xl items-center gap-4 border-t pt-5 text-sm">
                     <span className="text-accent text-2xl font-black">2026</span>
                     <span className="text-background/70">Season project</span>
                     <span className="bg-secondary ml-auto h-1.5 w-1.5 rounded-full" aria-hidden="true" />
                     <span className="text-background/70">Wooden Warrior</span>
-                </div>
+                </div> */}
             </div>
         </section>
     );

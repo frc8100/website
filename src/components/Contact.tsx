@@ -2,7 +2,7 @@ import { Mail } from "lucide-react";
 
 export const Contact: React.FC = () => {
     return (
-        <section className="w-full bg-blue-500 px-6 py-20 text-white md:px-12 lg:py-24" id="contact">
+        <section className="w-full min-h-[50vh] bg-blue-500 px-6 py-20 text-white md:px-12 lg:py-24" id="contact">
             <div className="mx-auto max-w-4xl text-center">
                 <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-blue-100">
                     Get Involved

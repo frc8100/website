@@ -14,27 +14,27 @@ interface SponsorsProps {
 const defaultSponsors: Sponsor[] = [
     {
         name: "AndyMark",
-        logo: "/images/sponsors/andymark.png",
+        logo: "/website/images/sponsors/andymark.png",
     },
     {
         name: "Gene Haas Foundation",
-        logo: "/images/sponsors/gene-haas.png",
+        logo: "/website/images/sponsors/gene-haas.png",
     },
     {
         name: "Nordson",
-        logo: "/images/sponsors/nordson.png",
+        logo: "/website/images/sponsors/nordson.png",
     },
     {
         name: "REV Robotics",
-        logo: "/images/sponsors/rev.png",
+        logo: "/website/images/sponsors/rev.png",
     },
     // {
     //     name: "Riverside Pizza",
-    //     logo: "/images/sponsors/riverside-pizza.jpg",
+    //     logo: "/website/images/sponsors/riverside-pizza.jpg",
     // },
     {
         name: "Gwinnett County Public Schools",
-        logo: "/images/sponsors/gcps.png",
+        logo: "/website/images/sponsors/gcps.png",
     },
 ];
 

@@ -83,7 +83,7 @@ const Logo: React.FC<LogoProps> = (props) => {
 export const Header: React.FC = () => {
     return (
         <div className="bg-primary/80 fixed top-0 z-10 flex w-full items-center justify-between border-b border-border/50 p-4 shadow-md backdrop-blur-md">
-            <Logo logoUrl="/logo.png" teamName="Grayson Robotics" teamNumber={8100} />
+            <Logo logoUrl="/website/logo.png" teamName="Grayson Robotics" teamNumber={8100} />
 
             {/* TODO: Add these links */}
             <nav className="flex items-center">
@@ -99,6 +99,7 @@ export const Header: React.FC = () => {
                 <NavItem text="Robot" url="#robot" />
                 <NavItem text="Outreach" url="#outreach" />
                 <NavItem text="Sponsors" url="#sponsors" />
+                <NavItem text="Contact" url="#contact" />
             </nav>
         </div>
     );
