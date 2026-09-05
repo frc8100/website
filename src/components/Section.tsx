@@ -23,7 +23,7 @@ const variants = {
         eyebrow: "text-accent",
     },
     accent: {
-        section: "bg-primary-light text-accent-foreground",
+        section: "bg-primary-light text-accent",
         eyebrow: "text-secondary",
     },
 };

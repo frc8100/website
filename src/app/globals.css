@@ -81,11 +81,11 @@
     --primary-foreground: 0 0% 98%;
     --secondary: 46 73% 33%;
     --secondary-foreground: 0 0% 9%;
-    --secondary-light: 0 0% 27%;
+    --secondary-light: 50 78% 72%;
     --muted: 0 0% 96.1%;
     --muted-foreground: 0 0% 45.1%;
     --accent: 120 100% 15%;
-    --accent-foreground: 0 0% 9%;
+    --accent-foreground: 120 98% 30%;;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 89.8%;

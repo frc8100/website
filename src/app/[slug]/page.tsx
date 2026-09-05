@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 
-import { ContentLayout } from "@/components/content-layout";
+import { ContentLayout } from "@/components/ContentLayout";
 import { mdxComponents } from "@/mdx-components";
 
 const pages = {

@@ -12,10 +12,10 @@ interface SponsorsProps {
 
 // TODO: Move to seperate
 const defaultSponsors: Sponsor[] = [
-    {
-        name: "AndyMark",
-        logo: "/website/images/sponsors/andymark.png",
-    },
+    // {
+    //     name: "AndyMark",
+    //     logo: "/website/images/sponsors/andymark.png",
+    // },
     {
         name: "Gene Haas Foundation",
         logo: "/website/images/sponsors/gene-haas.png",
@@ -24,19 +24,28 @@ const defaultSponsors: Sponsor[] = [
         name: "Nordson",
         logo: "/website/images/sponsors/nordson.png",
     },
-    {
-        name: "REV Robotics",
-        logo: "/website/images/sponsors/rev.png",
-    },
     // {
-    //     name: "Riverside Pizza",
-    //     logo: "/website/images/sponsors/riverside-pizza.jpg",
+    //     name: "REV Robotics",
+    //     logo: "/website/images/sponsors/rev.png",
     // },
+    {
+        name: "Riverside Pizza",
+        logo: "/website/images/sponsors/riverside-pizza.png",
+    },
+    {
+        name: "Chick-fil-A",
+        logo: "/website/images/sponsors/chickfila.webp",
+    },
     {
         name: "Gwinnett County Public Schools",
         logo: "/website/images/sponsors/gcps.png",
     },
 ];
+/*
+Truett CFA Grayson
+Riverside Grayson
+Carbice
+*/
 
 export const Sponsors: React.FC<SponsorsProps> = (props: SponsorsProps) => {
     const sponsors = defaultSponsors;
@@ -45,7 +54,7 @@ export const Sponsors: React.FC<SponsorsProps> = (props: SponsorsProps) => {
         <section className="w-full bg-zinc-100 px-6 py-20 md:px-12 lg:py-28" id="sponsors">
             <div className="mx-auto max-w-6xl">
                 <div className="mb-12 text-center">
-                    <p className="mb-3 text-sm font-semibold tracking-widest text-blue-600 uppercase">Our Supporters</p>
+                    <p className="mb-3 text-sm font-semibold tracking-widest text-accent uppercase">Our Supporters</p>
 
                     <h2 className="text-4xl font-bold tracking-tight text-zinc-900 md:text-5xl">Built With Support</h2>
 

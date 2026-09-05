@@ -1,6 +1,7 @@
 /**
  * @file Declares the Header component and related components.
  */
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -28,16 +29,11 @@ interface NavItemProps {
  * @param props -
  */
 export const NavItem: React.FC<NavItemProps> = (props) => {
-    const { text, url } = props;
-
-    const { openInNewTab } = props;
+    const { text, url, openInNewTab } = props;
 
     return (
-        <Link href={url} className="text-secondary hover:text-accent mr-6 transition-all duration-300">
-            {/* <a target={openInNewTab ? "_blank" : undefined} rel="noopener noreferrer" className="text-secondary hover:text-accent mr-6 transition-all duration-300">
-                {text} {openInNewTab && "↗"}
-            </a> */}
-            {text}
+        <Link href={url} className={`text-secondary hover:text-accent mr-6 transition-all duration-300 font-bold text-xs md:text-base ${!openInNewTab ? "hidden md:block" : ""}`} rel="noopener noreferrer" target={openInNewTab ? "_blank" : undefined}>
+            {text} {openInNewTab && "→"}
         </Link>
     );
 };
@@ -68,10 +64,10 @@ const Logo: React.FC<LogoProps> = (props) => {
 
     return (
         <div className="flex items-center">
-            <img src={logoUrl} alt="Logo" className="mr-2 h-12 w-12 rounded-lg" />
+            <Image src={logoUrl} alt="Logo" className="mr-2 h-16 w-16 rounded-lg" height={64} width={64} />
             <div>
-                <h1 className="text-accent text-xl font-bold text-shadow-md">{teamName}</h1>
-                <p className="text-secondary text-sm text-shadow-md">FRC Team {teamNumber}</p>
+                <h1 className="text-accent md:text-2xl font-bold text-shadow-md text-nowrap">{teamName}</h1>
+                <p className="text-secondary text-sm md:text-base text-shadow-md font-bold text-nowrap">FRC Team {teamNumber}</p>
             </div>
         </div>
     );

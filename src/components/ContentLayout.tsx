@@ -10,17 +10,19 @@ type ContentLayoutProps = {
     variant?: "default" | "wide";
 };
 
-export function ContentLayout({
-    children,
-    showHeader = true,
-    showFooter = true,
-    variant = "default",
-}: ContentLayoutProps) {
+export const ContentLayout: React.FC<ContentLayoutProps> = (props: ContentLayoutProps) => {
+    const {
+        children,
+        showHeader = true,
+        showFooter = true,
+        variant = "default",
+    } = props;
+
     return (
         <>
             {showHeader && <Header />}
             <main className={showHeader ? "pt-20" : "pt-8"}>
-                <article className={`${variant === "wide" ? "mx-auto max-w-7xl" : "mx-auto max-w-4xl"}`}>
+                <article className={`${variant === "wide" ? "mx-auto" : "mx-auto max-w-4xl"}`}>
                     {children}
                 </article>
             </main>
