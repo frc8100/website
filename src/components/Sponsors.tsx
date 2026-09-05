@@ -38,11 +38,11 @@ const defaultSponsors: Sponsor[] = [
     },
 ];
 
-export default function Sponsors(props: SponsorsProps) {
+export const Sponsors: React.FC<SponsorsProps> = (props: SponsorsProps) => {
     const sponsors = defaultSponsors;
     
     return (
-        <section className="w-full bg-zinc-100 px-6 py-20 md:px-12 lg:py-28">
+        <section className="w-full bg-zinc-100 px-6 py-20 md:px-12 lg:py-28" id="sponsors">
             <div className="mx-auto max-w-6xl">
                 <div className="mb-12 text-center">
                     <p className="mb-3 text-sm font-semibold tracking-widest text-blue-600 uppercase">Our Supporters</p>

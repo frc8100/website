@@ -5,20 +5,19 @@ import Image from "next/image";
 import React from "react";
 
 interface HeroProps {
-    title?: string;
-    subtitle?: string;
-    image?: string;
+    title: string;
+    subtitle: string;
+    image: string;
 }
 
 export const Hero: React.FC<HeroProps> = (props) => {
     const { title, subtitle, image } = props;
-    const heroImage = image || "/images/robot/wooden-warrior.jpg";
 
     return (
-        <section className="bg-foreground relative isolate flex min-h-screen w-full items-center overflow-hidden px-6 py-32 text-background md:px-12 lg:px-20">
+        <section className="bg-foreground relative isolate flex min-h-[50vh] w-full items-center overflow-hidden px-6 py-32 text-background md:px-12 lg:px-20">
             <Image
-                src={heroImage}
-                alt="Grayson Robotics robot Wooden Warrior"
+                src={image}
+                alt="Grayson Robotics Team"
                 fill
                 priority
                 className="-z-20 object-cover object-center"
@@ -30,13 +29,13 @@ export const Hero: React.FC<HeroProps> = (props) => {
             <div className="mx-auto w-full max-w-6xl">
                 <div className="max-w-3xl">
                     <p className="text-secondary mb-5 text-sm font-bold tracking-[0.28em] uppercase">
-                        FRC Team 8100 · Grayson Robotics
+                        FRC Team 8100
                     </p>
                     <h1 className="text-accent max-w-2xl text-5xl leading-[0.95] font-black tracking-tight sm:text-7xl lg:text-8xl">
-                        {title || "Build boldly. Compete fiercely."}
+                        {title}
                     </h1>
                     <p className="text-background/85 mt-7 max-w-xl text-lg leading-8 md:text-xl">
-                        {subtitle || "We are Grayson Robotics, a student-led team designing the future one robot at a time."}
+                        {subtitle}
                     </p>
 
                     <div className="mt-9 flex flex-wrap items-center gap-4">

@@ -1,6 +1,7 @@
 /**
  * @file Declares the Header component and related components.
  */
+import Link from "next/link";
 import React from "react";
 
 interface NavItemProps {
@@ -27,14 +28,17 @@ interface NavItemProps {
  * @param props -
  */
 export const NavItem: React.FC<NavItemProps> = (props) => {
-    const { text, url, active } = props;
+    const { text, url } = props;
 
     const { openInNewTab } = props;
 
     return (
-        <a href={url} target={openInNewTab ? "_blank" : undefined} rel="noopener noreferrer" className="text-secondary hover:text-accent mr-6 transition-all duration-300">
-            {text} {openInNewTab && "↗"}
-        </a>
+        <Link href={url} className="text-secondary hover:text-accent mr-6 transition-all duration-300">
+            {/* <a target={openInNewTab ? "_blank" : undefined} rel="noopener noreferrer" className="text-secondary hover:text-accent mr-6 transition-all duration-300">
+                {text} {openInNewTab && "↗"}
+            </a> */}
+            {text}
+        </Link>
     );
 };
 
@@ -78,18 +82,24 @@ const Logo: React.FC<LogoProps> = (props) => {
  */
 export const Header: React.FC = () => {
     return (
-        <div className="bg-primary fixed top-0 z-10 flex w-full items-center justify-between p-4 shadow-md">
+        <div className="bg-primary/80 fixed top-0 z-10 flex w-full items-center justify-between border-b border-border/50 p-4 shadow-md backdrop-blur-md">
             <Logo logoUrl="/logo.png" teamName="Grayson Robotics" teamNumber={8100} />
 
             {/* TODO: Add these links */}
-            <div className="flex items-center">
-                <NavItem text="Home" url="/home" />
+            <nav className="flex items-center">
+                {/* <NavItem text="Home" url="/home" /> */}
                 {/* <NavItem text="History" url="/history" /> */}
-                <NavItem text="Our Team" url="/team" />
+                {/* <NavItem text="Our Team" url="/team" /> */}
                 {/* <NavItem text="Sponsors" url="/" />
                 <NavItem text="Impact" url="/" />
                 <NavItem text="Media" url="/" /> */}
-            </div>
+
+                <NavItem text="About" url="#frc" />
+                <NavItem text="Team" url="#team" />
+                <NavItem text="Robot" url="#robot" />
+                <NavItem text="Outreach" url="#outreach" />
+                <NavItem text="Sponsors" url="#sponsors" />
+            </nav>
         </div>
     );
 };

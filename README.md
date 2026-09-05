@@ -12,7 +12,3 @@ The code and documentation for the team website.
     npm run dev
     ```
 3. Open your browser and navigate to `http://localhost:3000` to view the website.
-
-## Tools
-
- - Figma: https://www.figma.com/design/wLkL1lNRAFY86qNUVEgRDH/Team-8100-Website

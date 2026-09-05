@@ -31,7 +31,7 @@ const RootLayout: React.FC<{
     children: React.ReactNode;
 }> = (props) => {
     return (
-        <html lang="en">
+        <html lang="en" className={`scroll-smooth bg-foreground text-background antialiased`}>
             <body>{props.children}</body>
         </html>
     );

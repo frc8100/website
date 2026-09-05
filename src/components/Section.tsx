@@ -10,11 +10,12 @@ interface SectionProps {
     imageSide?: "left" | "right";
     variant?: "light" | "dark" | "accent";
     className?: string;
+    navId?: string;
 }
 
 const variants = {
     light: {
-        section: "bg-background text-foreground",
+        section: "bg-primary text-accent",
         eyebrow: "text-secondary",
     },
     dark: {
@@ -22,25 +23,28 @@ const variants = {
         eyebrow: "text-accent",
     },
     accent: {
-        section: "bg-accent text-accent-foreground",
+        section: "bg-primary-light text-accent-foreground",
         eyebrow: "text-secondary",
     },
 };
 
-export default function Section({
-    title,
-    eyebrow,
-    children,
-    image,
-    imageAlt = "",
-    imageSide = "right",
-    variant = "light",
-    className = "",
-}: SectionProps) {
+export const Section: React.FC<SectionProps> = (props) => {
+    const {
+        title,
+        eyebrow,
+        children,
+        image,
+        imageAlt = "",
+        imageSide = "right",
+        variant = "light",
+        className = "",
+        navId,
+    } = props;
+
     const colors = variants[variant];
 
     return (
-        <section className={`w-full px-6 py-20 md:px-12 lg:py-28 ${colors.section} ${className}`}>
+        <section id={navId} className={`w-full px-6 py-20 md:px-12 lg:py-28 ${colors.section} ${className}`}>
             <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2 lg:gap-20">
                 <div className={imageSide === "left" ? "lg:order-2" : "lg:order-1"}>
                     {eyebrow && (
