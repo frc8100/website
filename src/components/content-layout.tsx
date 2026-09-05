@@ -19,8 +19,8 @@ export function ContentLayout({
     return (
         <>
             {showHeader && <Header />}
-            <main className={showHeader ? "pt-24" : "pt-8"}>
-                <article className={variant === "wide" ? "mx-auto max-w-6xl px-6" : "mx-auto max-w-4xl px-6"}>
+            <main className={showHeader ? "pt-20" : "pt-8"}>
+                <article className={`${variant === "wide" ? "mx-auto max-w-7xl" : "mx-auto max-w-4xl"}`}>
                     {children}
                 </article>
             </main>

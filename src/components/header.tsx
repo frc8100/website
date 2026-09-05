@@ -83,12 +83,12 @@ export const Header: React.FC = () => {
 
             {/* TODO: Add these links */}
             <div className="flex items-center">
-                <NavItem text="Home" url="/" />
-                <NavItem text="History" url="/history" />
-                <NavItem text="Our Team" url="/" />
-                <NavItem text="Sponsors" url="/" />
+                <NavItem text="Home" url="/home" />
+                {/* <NavItem text="History" url="/history" /> */}
+                <NavItem text="Our Team" url="/team" />
+                {/* <NavItem text="Sponsors" url="/" />
                 <NavItem text="Impact" url="/" />
-                <NavItem text="Media" url="/" />
+                <NavItem text="Media" url="/" /> */}
             </div>
         </div>
     );
